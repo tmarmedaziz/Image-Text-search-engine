@@ -1,0 +1,29 @@
+.stButton>button {
+    color: #4F8BE4;
+    border-radius: 20%;
+    height: 3em;
+    width: 3em;
+	padding-left:3em;
+	padding-right:3em;
+	
+
+}
+/*Change color of the input field */
+.stTextInput>div>input {
+    color: #FFFFFF;
+
+}
+
+span.css-10trblm e16nr0p30{
+	background-color:#7ca5f2;
+
+
+}
+
+
+
+
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
