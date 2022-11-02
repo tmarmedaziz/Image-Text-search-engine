@@ -3,5 +3,4 @@
 
 Develop a search engine by text and images
 ##
-![This is an image ](/Frontend/crée-par.svg)
-[![forthebadge](https://forthebadge.com/generator/?plabel=REALis%C3%A9&slabel=PAR)
+![This is an image ](/Frontend/réalisé-par.svg)
