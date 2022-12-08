@@ -17,14 +17,6 @@ def local_css(file_name):
 
 #Calling the css file
 local_css("style/styleapp.css")
-# bar = st.progress(2)
-# for i in range(100):
-#     time.sleep(0.04)
-#     bar.progress(i + 1)
-# with st.spinner('Wait for it...'):
-#     time.sleep(5)
-
-# bar.empty()    
 
 #define web page , icon de l'application
 #----- assests-----
@@ -74,15 +66,6 @@ with st.container():
 randi = 25
 left_container, right_container = st.columns(2)
 with right_container:
-    
-    # st.subheader("Search engine by text")
-    # title = st.text_input('', placeholder="Search Here")
-    # if title :
-    #     response = tr.search_by_text_query(title).content
-    #     response = json.loads(response)
-    #     images = [(i["_source"]['OriginalURL'], i["_source"]['Title']) for i in response['hits']['hits']]
-    #     images = [images[x:x+4] for x in range(0, len(images), 4)]
-    #     st.write(images)
 
     
     with st.form("my_form"):
@@ -163,16 +146,6 @@ except:
     pass
 
 
-# with col1:
-#     pass
-# with col2:
-#     pass
-# with col4:
-#     pass
-# with col5:
-#     pass
-# with col3 :
-#     center_button = st.button('Search')
 
 
 footer="""<style>

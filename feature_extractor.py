@@ -28,22 +28,9 @@ class FeatureExtractor:
         return feature / np.linalg.norm(feature)  # Normalize
 
     def extract_batch(self, batch):
-        """
-        Extract a deep feature from an input batch of images
-        Args:
-            batch of imgs: np.ndarray(batchsize, img.shape)
-
-        Returns:
-            feature (np.ndarray): deep feature with the shape=(batchsize, 4096, )
-        """
         batch = [img.resize((224, 224)) for img in batch]
         batch = [img.convert('RGB') for img in batch]
         x = np.array([image.img_to_array(img) for img in batch])
         x = preprocess_input(x)  # Subtracting avg values for each pixel
         feature = self.model.predict(x)  # (1, 4096) -> (4096, )
         return feature / np.linalg.norm(feature)  # Normalize
-
-
-
-
-
